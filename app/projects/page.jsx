@@ -1,0 +1,48 @@
+import React from 'react'
+import Image from 'next/image'
+
+const Projects = () => {
+  return (
+    <div id='projects' className='text-white h-auto min-h-[100vh] border-b-2 border-gray-500 flex flex-col items-center justify-start py-20 px-20 max-md:px-0 gap-[10vh] relative '>
+      <div className='w-full h-auto flex items-center justify-center'>
+        <h1 className='heading'>PROJECTS</h1>
+      </div>
+      <section className='flex flex-row flex-wrap max-md:flex-col items-start justify-center w-full h-auto relative'>
+        <div className=' glassmorphism hover:scale-[0.8] duration-500 flex flex-col items-center cursor-pointer scale-75 hover:shadow-xl smooth '>
+          <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>Twikker</h1>
+          <p className='desc text-center  lg:px-20' >A Full Stack posting app, where you can sign in through google and post, even you can see your profile and edit or delete posts. I created this using Next.js, MongoDB, Tailwind CSS, Javascript, React.js </p>
+
+          <Image src={"/assets/images/project1.png"} width={500} height={500} className=' lg:p-10 max-lg:pt-5' />
+
+        </div>
+        <div className=' glassmorphism hover:scale-[0.8] duration-500 flex flex-col items-center cursor-pointer scale-75 hover:shadow-xl smooth'>
+          <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>iChat App</h1>
+          <p className='desc text-center  lg:px-20' >A Realtime chatting application where you can enter your username and simple chat in a chat group with other people joined. I created this using HTML, CSS, Node.js, JS, Socket.io</p>
+
+          <Image src={"/assets/images/iChat.png"} width={500} height={500} className=' lg:p-10 max-lg:pt-5' />
+
+        </div>
+        <div className=' glassmorphism hover:scale-[0.8] duration-500 flex flex-col items-center cursor-pointer scale-75 hover:shadow-xl smooth'>
+          <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>Animated Website</h1>
+          <p className='desc text-center  lg:px-20' >A clone of sidcup wesbite which is a excellent animated wesbite using Gsap and scrolltrigger and various more features in JS, also used HTMk & CSS. </p>
+
+          <Image src={"/assets/images/animated.png"} width={500} height={500} className=' lg:p-10 max-lg:pt-5' />
+
+        </div>
+        <div className=' glassmorphism hover:scale-[0.8] duration-500 flex flex-col items-center cursor-pointer scale-75 hover:shadow-xl smooth h-full'>
+          <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>Cross Healthcare Clone</h1>
+          <p className='desc text-center  lg:px-20' >A clone of Cross Healthcare page which is of cross atlantic pvt. ltd. I created this using HTML, CSS & JS </p>
+
+          <Image src={"/assets/images/cross.png"} width={500} height={500} className=' lg:p-10 max-lg:pt-5' />
+
+        </div>
+
+
+      </section>
+        <div><Image src={"/assets/images/asset1.png"} width={300} height={300} className='absolute z-[-1] left-[700px] top-[640px] max-lg:hidden '/></div>
+
+    </div>
+  )
+}
+
+export default Projects
