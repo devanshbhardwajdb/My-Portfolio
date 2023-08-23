@@ -20,9 +20,9 @@ const ContactSchema = new Schema ({
         type:String,
         required:[true,"Email is required."],
     },
-    email:{
+    message:{
         type:String,
-        required:[true,"Email is required."],
+        required:[true,"Message is required."],
     },
 });
 
