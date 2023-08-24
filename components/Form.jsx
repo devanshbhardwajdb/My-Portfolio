@@ -7,8 +7,8 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
     <div id='contact' className='w-full h-auto min-h-[100vh] flex flex-row justify-start items-start max-lg:items-center max-lg:justify-center text-white  py-20 px-[10vw] max-md:px-0 relative max-lg:flex-col '>
 
         <div className='w-1/2 max-lg:w-full max-md:px-8'>
-          <h1 className='heading text-center'>Contact me</h1>
-          <form className='mt-10 w-full max-w-1/2 flex flex-col gap-7 glassmorphism' onSubmit={handleSubmit}>
+          <h1 className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Contact me</h1>
+          <form className='mt-10 w-full max-w-1/2 flex flex-col gap-7 glassmorphism project-class' onSubmit={handleSubmit}>
 
 
             <label>
@@ -24,7 +24,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
                 type='text'
                 placeholder='Enter your name'
                 required
-                className='form_input'
+                className='form_input cursor-text'
 
               />
             </label>
@@ -40,7 +40,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
                 type='phone'
                 placeholder='Enter you phone'
                 required
-                className='form_input'
+                className='form_input cursor-text'
               />
             </label>
             <label>
@@ -55,7 +55,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
                 type='email'
                 placeholder='Enter your email'
                 required
-                className='form_input'
+                className='form_input cursor-text'
               />
             </label>
             <label>
@@ -70,7 +70,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
 
                 placeholder='Write your message here'
                 required
-                className='form_textarea '
+                className='form_textarea cursor-text '
               />
             </label>
 
@@ -80,7 +80,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
               <button
                 type='submit'
 
-                className='bg-[#895EF6] rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-gray-400 font-bold font-inter text-xl'
+                className='contact-btn bg-[#895EF6] rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-[#57ebff] hover:text-black font-bold font-inter text-xl'
               >
                 Submit
 
@@ -89,7 +89,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
           </form>
         </div>
         <div className='w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw]'>
-          <h1 className='heading text-center'>Socials</h1>
+          <h1 className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Socials</h1>
           <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500' target="_blank">
 
             <Image src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />

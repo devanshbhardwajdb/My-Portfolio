@@ -1,3 +1,4 @@
+
 import "@styles/globals.css";
 import Navbar from "@components/Navbar";
 
@@ -7,6 +8,7 @@ export const metadata = {
 };
 
 const RootLayout = ({ children }) => (
+  
   <html lang='en'>
     <head>
       <link rel="shortcut icon" href="/assets/icons/eagle-logo.png" />
@@ -16,6 +18,7 @@ const RootLayout = ({ children }) => (
         {/* <div className=' bg main'>
           <div className='' />
         </div> */}
+        
         
         <main className='scroll relative'>
           {/* <div className="bg2"></div> */}
