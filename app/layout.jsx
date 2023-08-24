@@ -9,7 +9,7 @@ export const metadata = {
 
 const RootLayout = ({ children }) => (
   
-  <html lang='en'>
+  <html lang='en' >
     <head>
       <link rel="shortcut icon" href="/assets/icons/eagle-logo.png" />
     </head>
@@ -20,7 +20,7 @@ const RootLayout = ({ children }) => (
         </div> */}
         
         
-        <main className='scroll relative'>
+        <main className='scroll relative '>
           {/* <div className="bg2"></div> */}
           <Navbar/>
           {children}

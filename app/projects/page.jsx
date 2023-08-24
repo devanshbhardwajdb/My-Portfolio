@@ -3,11 +3,11 @@ import Image from 'next/image'
 
 const Projects = () => {
   return (
-    <div id='projects' className='text-white h-auto min-h-[100vh] border-b-2 border-gray-500 flex flex-col items-center justify-start py-20 px-20 max-md:px-0 gap-[10vh] relative '>
-      <div className='w-full h-auto flex items-center justify-center'>
+    <div id='projects' className='text-white h-auto min-h-[100vh] border-b-2 border-gray-500 flex flex-col items-center justify-start max-md:px-0  py-20 gap-[10vh] relative '>
+      <div className='w-full h-auto flex items-center justify-center '>
         <h1 className='heading hover:text-[#57ebff] duration-[0.7s]'>PROJECTS</h1>
       </div>
-      <section className='flex flex-row flex-wrap max-md:flex-col items-start justify-center w-full h-auto relative'>
+      <section className='flex flex-row flex-wrap max-md:flex-col items-start justify-center w-full h-auto relative '>
         <div className=' project-class glassmorphism hover:scale-[0.8] duration-500 flex flex-col items-center  scale-75 hover:shadow-xl smooth '>
           <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>Twikker</h1>
           <p className='desc text-center  lg:px-20' >A Full Stack posting app, where you can sign in through google and post, even you can see your profile and edit or delete posts. I created this using Next.js, MongoDB, Tailwind CSS, Javascript, React.js </p>
@@ -39,7 +39,7 @@ const Projects = () => {
 
 
       </section>
-        {/* <div><Image src={"/assets/images/asset1.png"} width={300} height={300} className='absolute z-[-1] left-[700px] top-[640px] max-lg:hidden '/></div> */}
+        <div><Image src={"/assets/images/asset1.png"} width={300} height={300} className='absolute z-[-1] left-[612px] top-[620px] max-2xl:hidden '/></div>
 
     </div>
   )

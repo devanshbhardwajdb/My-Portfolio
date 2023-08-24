@@ -11,7 +11,10 @@
 *{
   cursor: default;
 }
-
+.html {
+  transform: scale(0.9); /* Scale down to 90% */
+  transform-origin: top; /* Keep the top as the anchor point */
+}
 body{
   height: 100%;
   width: 100%;
@@ -19,6 +22,7 @@ body{
 html{
   scroll-behavior: smooth;
   scroll-padding-top: 10vh;
+  
 }
 body{
   overflow-x: hidden;

@@ -34,29 +34,29 @@ const Navbar = () => {
 
       >
         <div className="flex items-center nav-left">
-          <Link href="#home" className='items'>
-            <Image src={"/assets/icons/eagle-logo.png"} width={40} height={40} alt="Logo" />
+          <Link href="#home" className='items cursor-pointer'>
+            <Image src={"/assets/icons/eagle-logo.png"} width={40} height={40} alt="Logo cursor-pointer" />
           </Link>
         </div>
 
 
 
 
-        <div className=" flex  items-center gap-20 font-inter relative max-xl:hidden max-xl:flex-col max-xl:gap-8 max-xl:top-[22vh] max-xl:bg-gray-800 max-xl:p-10 max-xl:items-start nav-right transition-all duration-500">
+        <div className=" flex  items-center gap-20 font-semibold  font-inter relative max-xl:hidden max-xl:flex-col max-xl:gap-8 max-xl:top-[22vh] max-xl:bg-gray-800 max-xl:p-10 max-xl:items-start nav-right transition-all duration-500">
           <Link href="#home">
-            <h1 className="hover:text-[#57ebff] hover:shadow-glow hover:scale-[0.9] duration-500 items">Home</h1>
+            <h1 className="hover:text-[#57ebff] hover:shadow-glow hover:scale-[0.9] duration-500 items cursor-pointer">Home</h1>
           </Link>
           <Link href="#skills">
-            <h1 className="hover:text-[#57ebff] hover:shadow-glow hover:scale-[0.9] duration-500 items">Skills</h1>
+            <h1 className="hover:text-[#57ebff] hover:shadow-glow hover:scale-[0.9] duration-500 items cursor-pointer">Skills</h1>
           </Link>
           <Link href="#projects">
-            <h1 className="hover:text-[#57ebff] hover:shadow-glow  hover:scale-[0.9] duration-500 items">Projects</h1>
+            <h1 className="hover:text-[#57ebff] hover:shadow-glow  hover:scale-[0.9] duration-500 items cursor-pointer">Projects</h1>
           </Link>
           <Link href="#experience">
-            <h1 className="hover:text-[#57ebff] hover:shadow-glow hover:scale-[0.9] duration-500 items">Experience</h1>
+            <h1 className="hover:text-[#57ebff] hover:shadow-glow hover:scale-[0.9] duration-500 items cursor-pointer">Experience</h1>
           </Link>
           <Link href="#contact">
-            <button className=" bg-[#895EF6] rounded-full w-[150px] px-5 h-14 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-[#57ebff] hover:text-black font-[500] items">
+            <button className=" bg-[#895EF6] rounded-full w-[130px] px-5 h-12 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-[#57ebff] hover:text-black font-[500] items">
               Contact
             </button>
           </Link>
