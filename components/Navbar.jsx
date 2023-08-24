@@ -34,7 +34,7 @@ const Navbar = () => {
 
       >
         <div className="flex items-center nav-left">
-          <a href="#home" className='items cursor-pointer'>
+          <a href="#" className='items cursor-pointer'>
             <Image src={"/assets/icons/eagle-logo.png"} width={40} height={40} alt="Logo cursor-pointer" />
           </a>
         </div>
