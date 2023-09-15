@@ -28,6 +28,7 @@ body{
   overflow-x: hidden;
 }
 
+
 body::-webkit-scrollbar {
   display: block;
   width: 8px;
@@ -48,6 +49,10 @@ body::-webkit-scrollbar-thumb {
   
 
   
+}
+.glass_card:hover{
+  scale: 95%;
+
 }
 
 .smooth{

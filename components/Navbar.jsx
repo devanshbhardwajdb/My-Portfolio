@@ -1,14 +1,16 @@
 
 "use client"
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { motion } from "framer-motion";
+import { navVariants } from "../utils/motion";
 
 const Navbar = () => {
   const ref = useRef();
   const ref2 = useRef();
 
-  const toggleMenu = ()=>{
+  const toggleMenu = () => {
 
     if (ref.current.classList.contains('translate-x-full')) {
       ref.current.classList.remove('translate-x-full')
@@ -26,7 +28,10 @@ const Navbar = () => {
 
   return (
     <>
-      <nav
+      <motion.nav
+        variants={navVariants}
+        initial="hidden"
+        whileInView="show"
         className="nav fixed top-0 z-10 w-full flex justify-between items-center p-4 transition-all duration-300 px-[10vw] nav_head h-[10vh]   max-xl:bg-gray-800 backdrop-blur-xl shadow-lg shadow-gray-900 text-white  font-livvic"
 
       >
@@ -82,7 +87,7 @@ const Navbar = () => {
         <div ref={ref2} className='absolute top-[25%]  right-11 xl:hidden transition-all duration-500 ' onClick={toggleMenu}>
           <Image src={"/assets/icons/menu-bar.svg"} width={40} height={40} className='cursor-pointer invert burger max-xl:rotate-0 transition-all duration-500 '></Image>
         </div>
-      </nav>
+      </motion.nav>
     </>
   );
 
