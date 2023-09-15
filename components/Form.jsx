@@ -12,7 +12,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
 
 
             <label>
-              <span className='font-satoshi font-semibold text-base text-gray-200'>
+              <span className='font-livvic font-semibold text-base text-gray-200'>
                 Name
 
               </span>
@@ -29,7 +29,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
               />
             </label>
             <label>
-              <span className='font-satoshi font-semibold text-base text-gray-200'>
+              <span className='font-livvic font-semibold text-base text-gray-200'>
                 Phone
 
               </span>
@@ -44,7 +44,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
               />
             </label>
             <label>
-              <span className='font-satoshi font-semibold text-base text-gray-200'>
+              <span className='font-livvic font-semibold text-base text-gray-200'>
                 Email
 
               </span>
@@ -59,7 +59,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
               />
             </label>
             <label>
-              <span className='font-satoshi font-semibold text-base text-gray-200'>
+              <span className='font-livvic font-semibold text-base text-gray-200'>
                 Your message
               </span>
 
@@ -80,7 +80,7 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
               <button
                 type='submit'
 
-                className='contact-btn bg-[#895EF6] rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-[#57ebff] hover:text-black font-bold font-inter text-xl'
+                className='contact-btn bg-[#895EF6] rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-[#57ebff] hover:text-black font-livvic text-xl'
               >
                 Submit
 
@@ -88,37 +88,37 @@ const Form = ({ setFormData , handleSubmit , formData }) => {
             </div>
           </form>
         </div>
-        <div className='w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw]'>
+        <div className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
           <h1 className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Socials</h1>
-          <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500' target="_blank">
+          <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <Image src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-satoshi font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
+            <p className='font-livvic font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
           </Link>
-          <Link href="https://www.linkedin.com/in/devansh-bhardwaj-98771b239/" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500'>
+          <Link href="https://www.linkedin.com/in/devansh-bhardwaj-98771b239/" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
 
             <Image src={"/assets/icons/linkedin.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-satoshi font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
+            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
           </Link>
-          <Link href="https://github.com/devanshbhardwajdb" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500'>
+          <Link href="https://github.com/devanshbhardwajdb" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
 
             <Image src={"/assets/icons/github.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-satoshi font-semibold text-base text-gray-200'>Check out my Github</p>
+            <p className='font-livvic font-semibold text-base text-gray-200'>Check out my Github</p>
           </Link>
-          <Link href="https://www.instagram.com/devanshbhardwaj_db/" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500' target="_blank">
+          <Link href="https://www.instagram.com/devanshbhardwaj_db/" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <Image src={"/assets/icons/insta.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-satoshi font-semibold text-base text-gray-200'>Follow me on Instagram</p>
+            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Instagram</p>
           </Link>
-          <Link href="https://www.facebook.com/devanshbhardwajdb" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 ' target="_blank">
+          <Link href="https://www.facebook.com/devanshbhardwajdb" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500   cursor-pointer' target="_blank">
 
             <Image src={"/assets/icons/fb.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-satoshi font-semibold text-base text-gray-200'>Follow me on Facebook</p>
+            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Facebook</p>
           </Link>
-          <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FDevansh06122166" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500' target="_blank">
+          <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FDevansh06122166" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <Image src={"/assets/icons/twitter.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-satoshi font-semibold text-base text-gray-200'>Follow me on Twitter</p>
+            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Twitter</p>
           </Link>
         </div>
 

@@ -10,6 +10,8 @@ module.exports = {
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
+        playfair: ['Playfair Display', 'serif'],
+        livvic: ['Livvic', 'serif'],
       },
       colors: {
         'primary-orange': '#FF5722',

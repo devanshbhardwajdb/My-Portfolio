@@ -24,14 +24,14 @@ const Home = () => (
                     <div className="text-white text-5xl font-extrabold max-lg:text-center " > <span> Hi, I am</span> <span className="purple_gradient hover:text-[#57ebff] nameh1">Devansh Bhardwaj</span></div>
                     <div className='text-4xl font-extrabold text-white max-lg:text-center  '> <span>Full</span> <span> Stack</span> <span> Web </span> <span>Developer</span></div>
                 </h1>
-                <div className="flex gap-x-20 justify-start mt-10 mb-20 max-md:flex-col max-md:gap-5 max-xl:items-center max-xl:justify-center">
+                <div className="flex gap-x-20 justify-start mt-10 mb-20 max-md:flex-col max-md:gap-5 max-xl:items-center max-xl:justify-center font-livvic">
                     <Link href="https://drive.google.com/file/d/1Fs5__kpnzbzrRJlCXGeAVjsx_jIilU2M/view?usp=sharing" target="_blank">
-                        <button className=" bg-[#895EF6] text-white rounded-full w-60 px-5 h-16 hover:shadow-glow hover:scale-[1.15] duration-500 hover:bg-[#57ebff] hover:text-black font-bold font-inter text-xl">
+                        <button className=" bg-[#895EF6] text-white rounded-full w-60 px-5 h-16 hover:shadow-glow hover:scale-[1.15] duration-500 hover:bg-[#57ebff] hover:text-black  text-xl">
                             Download CV
                         </button>
                     </Link>
                     <Link href="https://github.com/devanshbhardwajdb" target="_blank">
-                        <button className=" bg-[#895EF6] text-white rounded-full w-60 px-5 h-16 hover:shadow-glow hover:scale-[1.15] duration-500 hover:bg-[#57ebff] hover:text-black font-bold font-inter text-xl">
+                        <button className=" bg-[#895EF6] text-white rounded-full w-60 px-5 h-16 hover:shadow-glow hover:scale-[1.15] duration-500 hover:bg-[#57ebff] hover:text-black text-xl">
                             My Github
                         </button>
                     </Link>
