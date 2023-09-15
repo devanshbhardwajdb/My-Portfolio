@@ -1,3 +1,4 @@
+
 export const navVariants = {
     hidden: {
       opacity: 0,
