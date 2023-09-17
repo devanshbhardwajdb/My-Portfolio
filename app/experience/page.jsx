@@ -1,6 +1,6 @@
 "use client"
 import React from 'react'
-import Image from 'next/image'
+
 import { motion } from "framer-motion";
 import { fadeIn, fadeIn2, slideIn,slideIn2, staggerContainer, textVariant, textVariant1 } from "@/utils/motion";
 
@@ -21,7 +21,7 @@ const Experience = () => {
           <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>Internship</h1>
           <p className='desc text-center  lg:px-20' >1 Month Internship at Oasis Infobyte </p>
 
-          <Image src={"/assets/images/oi.jfif"} width={200} height={200} className=' lg:p-10 max-lg:pt-5 rounded-full' />
+          <img alt="exp" src={"/assets/images/oi.jfif"} width={200} height={200} className=' lg:p-10 max-lg:pt-5 rounded-full' />
 
         </motion.div>
         <motion.div variants={slideIn2('left', "tween", 0.1, 0.5)}
@@ -31,7 +31,7 @@ const Experience = () => {
           <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>Internship</h1>
           <p className='desc text-center  lg:px-20' >1 Month Internship at Cross Atlantic pvt. ltd. </p>
 
-          <Image src={"/assets/images/ca.png"} width={200} height={200} className=' lg:p-10 max-lg:pt-5 rounded-full object-cover' />
+          <img alt="exp" src={"/assets/images/ca.png"} width={200} height={200} className=' lg:p-10 max-lg:pt-5 rounded-full object-cover' />
 
         </motion.div>
         <motion.div variants={slideIn2('left', "tween", 0.2, 0.5)}
@@ -41,7 +41,7 @@ const Experience = () => {
           <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>Internship</h1>
           <p className='desc text-center  lg:px-20' >1 Month Internship at Code Clause </p>
 
-          <Image src={"/assets/images/cc.png"} width={200} height={200} className=' lg:p-10 max-lg:pt-5 rounded-full' />
+          <img alt="exp" src={"/assets/images/cc.png"} width={200} height={200} className=' lg:p-10 max-lg:pt-5 rounded-full' />
 
         </motion.div>
       </section>

@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link'
-import Image from 'next/image'
+
 import { motion } from "framer-motion";
 import { fadeIn, fadeIn2, slideIn, slideIn2, staggerContainer, textVariant, textVariant1 } from "@/utils/motion";
 
@@ -91,19 +91,20 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           </div>
         </form>
       </div>
-      <div className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
+      <motion.div variants={staggerContainer} initial="hidden" whileInView="show" className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
         <motion.h1 variants={slideIn('left', "tween", 0, 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
           className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Socials</motion.h1>
+        
         <motion.div variants={slideIn('left', "tween", 0, 0.5)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}>
           <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
-            <Image src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <img src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />
             <p className='font-livvic font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
           </Link>
         </motion.div>
@@ -113,7 +114,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           viewport={{ once: false, amount: 0.25 }}>
           <Link href="https://www.linkedin.com/in/devansh-bhardwaj-98771b239/" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
 
-            <Image src={"/assets/icons/linkedin.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <img src={"/assets/icons/linkedin.png"} alt={"Logo"} width={30} height={30} className='invert' />
             <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
           </Link>
         </motion.div>
@@ -123,7 +124,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           viewport={{ once: false, amount: 0.25 }}>
           <Link href="https://github.com/devanshbhardwajdb" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
 
-            <Image src={"/assets/icons/github.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <img src={"/assets/icons/github.png"} alt={"Logo"} width={30} height={30} className='invert' />
             <p className='font-livvic font-semibold text-base text-gray-200'>Check out my Github</p>
           </Link>
         </motion.div>
@@ -134,7 +135,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           viewport={{ once: false, amount: 0.25 }}>
           <Link href="https://www.instagram.com/devanshbhardwaj_db/" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
-            <Image src={"/assets/icons/insta.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <img src={"/assets/icons/insta.png"} alt={"Logo"} width={30} height={30} className='invert' />
             <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Instagram</p>
           </Link>
         </motion.div>
@@ -145,7 +146,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           viewport={{ once: false, amount: 0.25 }}>
           <Link href="https://www.facebook.com/devanshbhardwajdb" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500   cursor-pointer' target="_blank">
 
-            <Image src={"/assets/icons/fb.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <img src={"/assets/icons/fb.png"} alt={"Logo"} width={30} height={30} className='invert' />
             <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Facebook</p>
           </Link>
         </motion.div>
@@ -156,11 +157,11 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           viewport={{ once: false, amount: 0.25 }}>
           <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FDevansh06122166" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
-            <Image src={"/assets/icons/twitter.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <img src={"/assets/icons/twitter.png"} alt={"Logo"} width={30} height={30} className='invert' />
             <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Twitter</p>
           </Link>
         </motion.div>
-      </div>
+      </motion.div>
 
     </div>
   )
