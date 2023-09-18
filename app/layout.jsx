@@ -27,7 +27,7 @@ const RootLayout = ({ children }) => (
     <body>
 
 
-      <main >
+      <main className="overflow-x-hidden" >
         <Navbar />
         {children}
       </main>

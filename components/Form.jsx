@@ -91,14 +91,64 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           </div>
         </form>
       </div>
-      <motion.div variants={staggerContainer} initial="hidden" whileInView="show" className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
+      <div className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
+        <h1
+          className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Socials</h1>
+
+        <div>
+          <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
+
+            <img src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <p className='font-livvic font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
+          </Link>
+        </div>
+        <div >
+          <Link href="https://www.linkedin.com/in/devansh-bhardwaj-98771b239/" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
+
+            <img src={"/assets/icons/linkedin.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
+          </Link>
+        </div>
+        <div >
+          <Link href="https://github.com/devanshbhardwajdb" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
+
+            <img src={"/assets/icons/github.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <p className='font-livvic font-semibold text-base text-gray-200'>Check out my Github</p>
+          </Link>
+        </div>
+
+        <div >
+          <Link href="https://www.instagram.com/devanshbhardwaj_db/" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
+
+            <img src={"/assets/icons/insta.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Instagram</p>
+          </Link>
+        </div>
+
+        <div>
+          <Link href="https://www.facebook.com/devanshbhardwajdb" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500   cursor-pointer' target="_blank">
+
+            <img src={"/assets/icons/fb.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Facebook</p>
+          </Link>
+        </div>
+
+        <div>
+          <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FDevansh06122166" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
+
+            <img src={"/assets/icons/twitter.png"} alt={"Logo"} width={30} height={30} className='invert' />
+            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Twitter</p>
+          </Link>
+        </div>
+      </div>
+      {/* <motion.div variants={staggerContainer} initial="hidden" whileInView="show" className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
         <motion.h1 variants={slideIn('left', "tween", 0, 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
           className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Socials</motion.h1>
-        
-        <motion.div variants={slideIn('left', "tween", 0, 0.5)}
+
+        <motion.div variants={slideIn('left', "slideIn", 0, 0.5)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}>
@@ -161,7 +211,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
             <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Twitter</p>
           </Link>
         </motion.div>
-      </motion.div>
+      </motion.div> */}
 
     </div>
   )

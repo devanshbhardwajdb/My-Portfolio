@@ -4,6 +4,7 @@ import React, { useRef } from 'react';
 import Link from 'next/link';
 import { motion } from "framer-motion";
 import { navVariants } from "../utils/motion";
+import { AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
   const ref = useRef();
@@ -31,7 +32,7 @@ const Navbar = () => {
         variants={navVariants}
         initial="hidden"
         whileInView="show"
-        className="nav fixed top-0 z-10 w-full flex justify-between items-center p-4 transition-all duration-300 px-[10vw] nav_head h-[10vh]   max-xl:bg-gray-800 backdrop-blur-xl shadow-lg shadow-gray-900 text-white  font-livvic"
+        className="nav fixed top-0 z-10  flex justify-between items-center p-4 transition-all duration-300 px-[10vw] nav_head h-[10vh]   max-xl:bg-gray-800 backdrop-blur-xl shadow-lg shadow-gray-900 text-white  font-livvic w-[100vw]"
 
       >
         <div className="flex items-center nav-left cursor-pointer ">
@@ -85,6 +86,7 @@ const Navbar = () => {
         </div>
         <div ref={ref2} className='absolute top-[25%]  right-11 xl:hidden transition-all duration-500 ' onClick={toggleMenu}>
           <img src={"/assets/icons/menu-bar.svg"} width={40} height={40} className='cursor-pointer invert burger max-xl:rotate-0 transition-all duration-500 '></img>
+          
         </div>
       </motion.nav>
     </>

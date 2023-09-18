@@ -36,7 +36,7 @@ const Hero = () => {
 
             </motion.div>
             <motion.div variants={textVariant(0)} viewport={{ once: false, amount: 0.25 }} className="w-1/2 h-full flex  justify-center items-start max-lg:items-center max-lg:justify-center  rounded-full bg-[#8954f3] border-[10px] border-[#8954f3] hover:bg-[#57ebff] hover:border-[#57ebff] duration-500 relative cursor-pointer">
-                <img alt="Photo" src={"/assets/images/photo.png"} width={400} height={400} className=" rounded-full object-contain z-[2] " />
+                <img alt="Photo" src={"/assets/images/photo1.png"} width={400} height={400} className=" rounded-full object-contain z-[2] " />
                 <span className="absolute bg-[#8954f3] opacity-70 shadow blur-[50px] rounded-full z-0"></span>
 
                 <div className="box absolute  xl:inset-y-[-25px]  lg:inset-y-[-20px] md:inset-y-[-25px] xl:h-[115%] xl:w-[115%] lg:h-[125%] lg:w-[125%] md:h-[120%] md:w-[120%]  max-md:h-[130%] max-md:w-[130%] z-[-3]"></div>
