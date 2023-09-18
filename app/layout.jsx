@@ -8,10 +8,10 @@ export const metadata = {
   other:{
     "theme-color": '#d1117',
     "color-scheme": 'dark only',
-    "twitter:image" : "../public/assets/images/portfolio.png",
+    "twitter:image" : "https://yt3.googleusercontent.com/REqWWNhXO3vNdvUZG-eghKsvXAqJ7yknILqUZ3vGoMLqzsskpsc9Qd5YoQIQcDqJ8gwhmXfXKvQ=s176-c-k-c0x00ffffff-no-rj",
     "twitter:card" : "summary_large_image",
     "og:url":"devansh-db-portfolio.netlify.app",
-    "og:image":"../public/assets/images/portfolio.png",
+    "og:image":"https://yt3.googleusercontent.com/REqWWNhXO3vNdvUZG-eghKsvXAqJ7yknILqUZ3vGoMLqzsskpsc9Qd5YoQIQcDqJ8gwhmXfXKvQ=s176-c-k-c0x00ffffff-no-rj",
     "og:type" : "website",
   }
 };
