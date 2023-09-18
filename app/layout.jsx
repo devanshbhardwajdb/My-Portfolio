@@ -5,6 +5,15 @@ import Navbar from "@components/Navbar";
 export const metadata = {
   title: "Devansh Bhardwaj - Portfolio",
   description: "Personal Portfolio",
+  other:{
+    "theme-color": '#d1117',
+    "color-scheme": 'dark only',
+    "twitter:image" : "../public/assets/images/portfolio.png",
+    "twitter:card" : "summary_large_image",
+    "og:url":"devansh-db-portfolio.netlify.app",
+    "og:image":"../public/assets/images/portfolio.png",
+    "og:type" : "website",
+  }
 };
 
 const RootLayout = ({ children }) => (
@@ -13,7 +22,7 @@ const RootLayout = ({ children }) => (
     <head>
      
 
-        <link rel="shortcut icon" href="/assets/icons/eagle-logo.png" />
+        
     </head>
     <body>
 
