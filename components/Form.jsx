@@ -91,7 +91,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           </div>
         </form>
       </div>
-      <div className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
+      {/* <div className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
         <h1
           className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Socials</h1>
 
@@ -140,8 +140,8 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
             <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Twitter</p>
           </Link>
         </div>
-      </div>
-      {/* <motion.div variants={staggerContainer} initial="hidden" whileInView="show" className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
+      </div> */}
+      <motion.div variants={staggerContainer} initial="hidden" whileInView="show" className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
         <motion.h1 variants={slideIn('left', "tween", 0, 0.2)}
           initial="hidden"
           whileInView="show"
@@ -211,7 +211,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
             <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Twitter</p>
           </Link>
         </motion.div>
-      </motion.div> */}
+      </motion.div>
 
     </div>
   )
