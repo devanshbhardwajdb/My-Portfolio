@@ -21,7 +21,7 @@ const Hero = () => {
                     <div className='text-4xl font-extrabold text-white max-lg:text-center  '> <span>Full</span> <span> Stack</span> <span> Web </span> <span>Developer</span></div>
                 </motion.h1>
                 <motion.div className="flex gap-x-20 justify-start mt-10 mb-20 max-md:flex-col max-md:gap-5 max-xl:items-center max-xl:justify-center font-livvic">
-                    <Link href="https://drive.google.com/file/d/1Fs5__kpnzbzrRJlCXGeAVjsx_jIilU2M/view?usp=sharing" target="_blank">
+                    <Link href="https://drive.google.com/file/d/1D3lxuBnNMcveiY9Ec5neirUAXVXoEJ0a/view?usp=sharing" target="_blank">
                         <button className=" bg-[#895EF6] text-white rounded-full w-60 px-5 h-16 hover:shadow-glow hover:scale-[1.15] duration-500 hover:bg-[#57ebff] hover:text-black  text-xl">
                             Download CV
                         </button>
