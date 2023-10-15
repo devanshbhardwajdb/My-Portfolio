@@ -29,7 +29,7 @@ const Experience = () => {
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }} className=' project-class glassmorphism hover:scale-[0.8] duration-500 flex flex-col items-center  scale-75 hover:shadow-xl smooth glass_card'>
           <h1 className=' font-bold text-[2vw] max-lg:text-[5vw] text-center  lg:px-10 pt-10'>Internship</h1>
-          <p className='desc text-center  lg:px-20' >1 Month Internship at Cross Atlantic pvt. ltd. </p>
+          <p className='desc text-center  lg:px-20' >3 Months Internship at Cross Atlantic pvt. ltd. </p>
 
           <img alt="exp" src={"/assets/images/ca.png"} width={200} height={200} className=' lg:p-10 max-lg:pt-5 rounded-full object-cover' />
 
