@@ -12,6 +12,7 @@ module.exports = {
         inter: ['Inter', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
         livvic: ['Livvic', 'serif'],
+        teachers: ['Teachers', 'sans'],
       },
       colors: {
         'primary-orange': '#FF5722',

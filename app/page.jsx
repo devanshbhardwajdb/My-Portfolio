@@ -16,7 +16,7 @@ import Link from "next/link";
 const Home = () => (
 
     <>
-        <div className="bg  main"></div>
+        <div className=" bg main"></div>
 
 
 

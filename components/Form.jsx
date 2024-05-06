@@ -15,7 +15,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
 
 
           <label>
-            <span className='font-livvic font-semibold text-base text-gray-200'>
+            <span className='font-teachers font-semibold text-base text-gray-200'>
               Name
 
             </span>
@@ -32,7 +32,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
             />
           </label>
           <label>
-            <span className='font-livvic font-semibold text-base text-gray-200'>
+            <span className='font-teachers font-semibold text-base text-gray-200'>
               Phone
 
             </span>
@@ -47,7 +47,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
             />
           </label>
           <label>
-            <span className='font-livvic font-semibold text-base text-gray-200'>
+            <span className='font-teachers font-semibold text-base text-gray-200'>
               Email
 
             </span>
@@ -62,7 +62,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
             />
           </label>
           <label>
-            <span className='font-livvic font-semibold text-base text-gray-200'>
+            <span className='font-teachers font-semibold text-base text-gray-200'>
               Your message
             </span>
 
@@ -83,7 +83,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
             <button
               type='submit'
 
-              className='contact-btn bg-[#895EF6] rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-[#57ebff] hover:text-black font-livvic text-xl'
+              className='contact-btn bg-[#895EF6] rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-[#57ebff] hover:text-black font-teachers text-xl'
             >
               Submit
 
@@ -99,21 +99,21 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <img src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
           </Link>
         </div>
         <div >
           <Link href="https://www.linkedin.com/in/devansh-bhardwaj-98771b239/" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
 
             <img src={"/assets/icons/linkedin.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
           </Link>
         </div>
         <div >
           <Link href="https://github.com/devanshbhardwajdb" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
 
             <img src={"/assets/icons/github.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Check out my Github</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Check out my Github</p>
           </Link>
         </div>
 
@@ -121,7 +121,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://www.instagram.com/devanshbhardwaj_db/" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <img src={"/assets/icons/insta.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Instagram</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Instagram</p>
           </Link>
         </div>
 
@@ -129,7 +129,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://www.facebook.com/devanshbhardwajdb" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500   cursor-pointer' target="_blank">
 
             <img src={"/assets/icons/fb.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Facebook</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Facebook</p>
           </Link>
         </div>
 
@@ -137,7 +137,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FDevansh06122166" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <img src={"/assets/icons/twitter.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Twitter</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Twitter</p>
           </Link>
         </div>
       </div> */}
@@ -155,7 +155,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <img src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
           </Link>
         </motion.div>
         <motion.div variants={slideIn('left', "tween", 0.1, 0.5)}
@@ -165,7 +165,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://www.linkedin.com/in/devansh-bhardwaj-98771b239/" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
 
             <img src={"/assets/icons/linkedin.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
           </Link>
         </motion.div>
         <motion.div variants={slideIn('left', "tween", 0.2, 0.5)}
@@ -175,7 +175,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://github.com/devanshbhardwajdb" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
 
             <img src={"/assets/icons/github.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Check out my Github</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Check out my Github</p>
           </Link>
         </motion.div>
 
@@ -186,7 +186,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://www.instagram.com/devanshbhardwaj_db/" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <img src={"/assets/icons/insta.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Instagram</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Instagram</p>
           </Link>
         </motion.div>
 
@@ -197,7 +197,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://www.facebook.com/devanshbhardwajdb" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500   cursor-pointer' target="_blank">
 
             <img src={"/assets/icons/fb.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Facebook</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Facebook</p>
           </Link>
         </motion.div>
 
@@ -208,7 +208,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FDevansh06122166" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
 
             <img src={"/assets/icons/twitter.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-livvic font-semibold text-base text-gray-200'>Follow me on Twitter</p>
+            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Twitter</p>
           </Link>
         </motion.div>
       </motion.div>
