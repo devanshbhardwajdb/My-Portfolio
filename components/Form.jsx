@@ -10,7 +10,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
     <div id='contact' className='w-full h-auto min-h-[100vh] flex flex-row justify-start items-start max-lg:items-center max-lg:justify-center text-white  py-20 px-[10vw] max-md:px-0 relative max-lg:flex-col '>
 
       <div className='w-1/2 max-lg:w-full max-md:px-8'>
-        <h1 className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Contact me</h1>
+        <h1 className='font-teachers text-3xl font-bold text-center hover:text-[#57ebff] duration-[0.7s]'>Contact me</h1>
         <form className='mt-10 w-full max-w-1/2 flex flex-col gap-7 glassmorphism project-class' onSubmit={handleSubmit}>
 
 
@@ -83,7 +83,7 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
             <button
               type='submit'
 
-              className='contact-btn bg-[#895EF6] rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 hover:bg-[#57ebff] hover:text-black font-teachers text-xl'
+              className='contact-btn bg_button1 rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 text-black  font-teachers text-xl'
             >
               Submit
 

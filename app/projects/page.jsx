@@ -30,7 +30,7 @@ const Projects = () => {
         <motion.h1 variants={slideIn('left', "tween", 0, 0.5)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.25 }} className='heading hover:text-[#57ebff] duration-[0.7s]'>PROJECTS</motion.h1>
+          viewport={{ once: true, amount: 0.25 }} className='font-teachers text-3xl font-bold hover:text-[#57ebff] duration-[0.7s]'>PROJECTS</motion.h1>
       </div>
 
       <section className=" w-full flex flex-wrap justify-center max-md:flex-col" >

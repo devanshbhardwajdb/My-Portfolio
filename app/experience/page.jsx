@@ -11,7 +11,7 @@ const Experience = () => {
       <motion.h1 variants={slideIn('left', "tween", 0, 0.5)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.25 }} className='heading hover:text-[#57ebff] duration-[0.7s]'>EXPERIENCE</motion.h1>
+          viewport={{ once: true, amount: 0.25 }} className='font-teachers text-3xl font-bold hover:text-[#57ebff] duration-[0.7s]'>EXPERIENCE</motion.h1>
       </div>
       <section className='flex flex-row max-md:flex-col max-md:items-center items-start justify-center w-full h-auto relative'>
         <motion.div variants={slideIn2('left', "tween", 0, 0.5)}

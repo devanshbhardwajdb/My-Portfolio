@@ -85,6 +85,9 @@ body::-webkit-scrollbar-thumb {
 .bg_button1 {
   background-image: linear-gradient(to top left, #9B03F8, #57ebff);
 }
+.bg_skill {
+  background-image:linear-gradient(90deg, rgba(155,3,248,0.1) 0%, rgba(0,0,0,0) 50%);
+}
 
 .smooth{
   -webkit-font-smoothing: subpixel-antialiased;
