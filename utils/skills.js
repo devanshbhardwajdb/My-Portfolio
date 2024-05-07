@@ -102,4 +102,5 @@ export const skills = [
         name: "Figma",
         icon: "/assets/icons/figma.svg",
     },
+    
 ];

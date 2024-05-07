@@ -6,12 +6,12 @@ import { fadeIn, fadeIn2, slideIn,slideIn2, staggerContainer, textVariant, textV
 
 const Experience = () => {
   return (
-    <div id='experience' className='w-full h-auto min-h-[100vh] flex flex-col justify-start items-center text-white  py-20 px-[10vw] max-md:px-0 relative border-b-2 border-gray-500'>
+    <div id='experience' className='w-full h-auto min-h-[100vh] flex flex-col bg_exp justify-start items-center text-white  py-20 px-[10vw] max-md:px-0 relative '>
       <div className=''>
       <motion.h1 variants={slideIn('left', "tween", 0, 0.5)}
           initial="hidden"
           whileInView="show"
-          viewport={{ once: true, amount: 0.25 }} className='font-teachers text-3xl font-bold hover:text-[#57ebff] duration-[0.7s]'>EXPERIENCE</motion.h1>
+          viewport={{ once: true, amount: 0.25 }} className='font-teachers htext text-4xl  font-bold hover:text-[#57ebff] duration-[0.7s]'>EXPERIENCE</motion.h1>
       </div>
       <section className='flex flex-row max-md:flex-col max-md:items-center items-start justify-center w-full h-auto relative'>
         <motion.div variants={slideIn2('left', "tween", 0, 0.5)}

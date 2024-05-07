@@ -3,14 +3,15 @@ import Link from 'next/link'
 
 import { motion } from "framer-motion";
 import { fadeIn, fadeIn2, slideIn, slideIn2, staggerContainer, textVariant, textVariant1 } from "@/utils/motion";
+import { contactItems } from '@utils/contact';
 
 
 const Form = ({ setFormData, handleSubmit, formData }) => {
   return (
-    <div id='contact' className='w-full h-auto min-h-[100vh] flex flex-row justify-start items-start max-lg:items-center max-lg:justify-center text-white  py-20 px-[10vw] max-md:px-0 relative max-lg:flex-col '>
+    <div id='contact' className='w-full h-auto min-h-[100vh] flex flex-row justify-start items-start max-lg:items-center max-lg:justify-center text-white  py-20 px-[10vw] max-md:px-0 relative max-lg:flex-col  bg_contact'>
 
       <div className='w-1/2 max-lg:w-full max-md:px-8'>
-        <h1 className='font-teachers text-3xl font-bold text-center hover:text-[#57ebff] duration-[0.7s]'>Contact me</h1>
+        <h1 className='font-teachers htext text-4xl font-extrabold  text-center hover:text-[#57ebff] duration-[0.7s]'>Contact me</h1>
         <form className='mt-10 w-full max-w-1/2 flex flex-col gap-7 glassmorphism project-class' onSubmit={handleSubmit}>
 
 
@@ -91,128 +92,27 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           </div>
         </form>
       </div>
-      {/* <div className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
-        <h1
-          className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Socials</h1>
-
-        <div>
-          <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
-
-            <img src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
-          </Link>
-        </div>
-        <div >
-          <Link href="https://www.linkedin.com/in/devansh-bhardwaj-98771b239/" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
-
-            <img src={"/assets/icons/linkedin.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
-          </Link>
-        </div>
-        <div >
-          <Link href="https://github.com/devanshbhardwajdb" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
-
-            <img src={"/assets/icons/github.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Check out my Github</p>
-          </Link>
-        </div>
-
-        <div >
-          <Link href="https://www.instagram.com/devanshbhardwaj_db/" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
-
-            <img src={"/assets/icons/insta.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Instagram</p>
-          </Link>
-        </div>
-
-        <div>
-          <Link href="https://www.facebook.com/devanshbhardwajdb" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500   cursor-pointer' target="_blank">
-
-            <img src={"/assets/icons/fb.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Facebook</p>
-          </Link>
-        </div>
-
-        <div>
-          <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FDevansh06122166" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
-
-            <img src={"/assets/icons/twitter.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Twitter</p>
-          </Link>
-        </div>
-      </div> */}
+      
       <motion.div variants={staggerContainer} initial="hidden" whileInView="show" className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
         <motion.h1 variants={slideIn('left', "tween", 0, 0.2)}
           initial="hidden"
           whileInView="show"
           viewport={{ once: false, amount: 0.25 }}
-          className='heading text-center hover:text-[#57ebff] duration-[0.7s]'>Socials</motion.h1>
+          className='font-teachers text-center hover:text-[#57ebff] duration-[0.7s] htext text-4xl font-extrabold '>Socials</motion.h1>
 
-        <motion.div variants={slideIn('left', "slideIn", 0, 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}>
-          <Link href="https://www.youtube.com/@DevanshBhardwajDB" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
-
-            <img src={"/assets/icons/yt.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Subscribe to my Youtube channel</p>
-          </Link>
-        </motion.div>
-        <motion.div variants={slideIn('left', "tween", 0.1, 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}>
-          <Link href="https://www.linkedin.com/in/devansh-bhardwaj-98771b239/" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
-
-            <img src={"/assets/icons/linkedin.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on LinkedIn</p>
-          </Link>
-        </motion.div>
-        <motion.div variants={slideIn('left', "tween", 0.2, 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}>
-          <Link href="https://github.com/devanshbhardwajdb" target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
-
-            <img src={"/assets/icons/github.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Check out my Github</p>
-          </Link>
-        </motion.div>
-
-        <motion.div variants={slideIn('left', "tween", 0.3, 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}>
-          <Link href="https://www.instagram.com/devanshbhardwaj_db/" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
-
-            <img src={"/assets/icons/insta.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Instagram</p>
-          </Link>
-        </motion.div>
-
-        <motion.div variants={slideIn('left', "tween", 0.4, 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}>
-          <Link href="https://www.facebook.com/devanshbhardwajdb" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500   cursor-pointer' target="_blank">
-
-            <img src={"/assets/icons/fb.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Facebook</p>
-          </Link>
-        </motion.div>
-
-        <motion.div variants={slideIn('left', "tween", 0.5, 0.5)}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: false, amount: 0.25 }}>
-          <Link href="https://twitter.com/i/flow/login?redirect_after_login=%2FDevansh06122166" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer' target="_blank">
-
-            <img src={"/assets/icons/twitter.png"} alt={"Logo"} width={30} height={30} className='invert' />
-            <p className='font-teachers font-semibold text-base text-gray-200'>Follow me on Twitter</p>
-          </Link>
-        </motion.div>
+        {/* Mapping through contact items */}
+        {contactItems.map((item) => (
+          <motion.div key={item.id} variants={slideIn('left', "tween", 0, 0.5)}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: false, amount: 0.25 }}>
+            <Link href={item.link} target="_blank" className='flex flex-row gap-5 justify-center items-center hover:scale-[1.15] duration-500 cursor-pointer'>
+              <img src={item.image} alt="Logo" width={30} height={30} className='' />
+              <p className='font-teachers font-semibold text-base text-gray-200'>{item.text}</p>
+            </Link>
+          </motion.div>
+        ))}
       </motion.div>
-
     </div>
   )
 }

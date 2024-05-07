@@ -1,7 +1,7 @@
 'use client'
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react'
 import { motion } from "framer-motion";
-import { fadeIn,fadeIn3, slideIn, staggerContainer, textVariant, textVariant1 } from "@/utils/motion";
+import { fadeIn, fadeIn3, slideIn, staggerContainer, textVariant, textVariant1 } from "@/utils/motion";
 import { skills } from '@utils/skills';
 
 
@@ -22,22 +22,27 @@ const Skills = () => {
     }
   };
 
+
+
+
+
   return (
-    <div
-      id="skills" className='text-white  border-b-2 border-gray-500 h-auto  flex flex-col items-center justify-center heading py-20  relative'>
+    <div id="skills" className='text-white bg_skills   w-[100vw] flex flex-col items-center justify-center heading py-20  relative '>
+      {/* <div className="absolute bg_overlay left-0 h-[20%] bottom-0 w-[5vw] z-[1]"></div> */}
+      {/* <div className="absolute bg_overlay right-0 h-full bg-red-400 w-[5vw] z-[1]"></div> */}
       <motion.h1 variants={slideIn('down', "tween", 0, 0.5)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }} className='font-teachers text-3xl hover:text-[#57ebff] duration-[0.7s]'>SKILLS</motion.h1>
+        viewport={{ once: false, amount: 0.25 }} className='font-teachers htext text-4xl font-extrabold  hover:text-[#57ebff] duration-[0.7s]'>SKILLS</motion.h1>
       {/* <div className='absolute  w-[50vw] z-[50] bg_skill h-1/2 left-0'></div> */}
-      <marquee behavior="scroll" direction="left" ref={marqueeRef} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} scrollAmount={20} className=' w-auto  '>
+      <marquee behavior="scroll" direction="left" scrollDelay={60} ref={marqueeRef} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} scrollAmount={20} className=' '>
 
         <div className=" gap-[100px] mt-20 relative flex ">
 
           {skills.map((skill) => {
 
             return (
-              <div key={skill.id} className='skill flex flex-col items-center justify-center'>
+              <div key={skill.id} className='skill flex flex-col cursor-pointer items-center justify-center hover:scale-90 hover:-translate-y-5 duration-300'>
 
                 <motion.div variants={fadeIn3('down', 'tween', 0.2, 1.5)}
                   initial="hidden"
