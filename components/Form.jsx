@@ -81,18 +81,13 @@ const Form = ({ setFormData, handleSubmit, formData }) => {
           <div className='flex-end mx-3 mb-5 gap-4'>
 
 
-            <button
-              type='submit'
-
-              className='contact-btn bg_button1 rounded-full w-full px-5 h-16 hover:shadow-glow hover:scale-[0.9] duration-500 text-black  font-teachers text-xl'
-            >
-              Submit
-
+            <button type='submit' className="group group-hover:before:duration-500 group-hover:after:duration-500 after:duration-500 hover:border-[#9B03F8] hover:before:[box-shadow:_20px_20px_20px_30px_#a21caf] duration-500 before:duration-500 hover:duration-500 underline underline-offset-2 hover:after:-right-8 hover:before:right-12 hover:before:-bottom-8 hover:before:blur hover:underline hover:underline-offset-4  origin-left hover:decoration-2 hover:text-[#9B03F8] relative hover:bg-neutral-900 bg-neutral-900/20 h-16  border text-left p-3 text-gray-50 text-base font-bold rounded-lg  overflow-hidden  before:absolute before:w-12 before:h-12 before:content[''] before:right-1 before:top-1 before:z-10 before:bg-[#9B03F8]/60 before:rounded-full before:blur-lg  after:absolute after:z-10 after:w-20 after:h-20 after:content['']  after:bg-[#57ebff]/50 after:right-8 after:top-3 after:rounded-full after:blur-lg font-teachers w-full">
+              Send Message
             </button>
           </div>
         </form>
       </div>
-      
+
       <motion.div variants={staggerContainer} initial="hidden" whileInView="show" className='lg:w-1/2 min-h-[100vh]  flex flex-col gap-10 justify-center items-start lg:ml-[22vw] '>
         <motion.h1 variants={slideIn('left', "tween", 0, 0.2)}
           initial="hidden"

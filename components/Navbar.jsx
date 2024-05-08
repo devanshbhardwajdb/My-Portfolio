@@ -38,7 +38,7 @@ const Navbar = () => {
       >
         <div className="flex items-center nav-left cursor-pointer ">
           <a href="#" className='items cursor-pointer'>
-            <img alt="logo" src={"/assets/icons/db_logo.svg"}  className="cursor-pointer w-20" />
+            <img alt="logo" src={"/assets/icons/db_logo.svg"} className="cursor-pointer w-20" />
           </a>
         </div>
 
@@ -62,6 +62,7 @@ const Navbar = () => {
             <button className=" bg_button rounded-lg  px-4 h-10 hover:shadow-glow hover:scale-[0.95] duration-500 font-medium hover:bg-[#57ebff] text-black items ">
               Contact
             </button>
+            
           </a>
 
         </div>
@@ -82,11 +83,15 @@ const Navbar = () => {
             <button className=" bg_button rounded-lg  px-4 h-10 hover:shadow-glow hover:scale-[0.95] duration-500 font-medium hover:bg-[#57ebff] text-black items ">
               Contact
             </button>
+            
+
+
           </a>
 
         </div>
         <div ref={ref2} className='absolute top-[25%]  right-11 xl:hidden transition-all duration-500 ' onClick={toggleMenu}>
           <img src={"/assets/icons/menu-bar.svg"} width={30} height={30} className='cursor-pointer invert burger max-xl:rotate-0 transition-all duration-500 '></img>
+
 
         </div>
       </motion.nav>
