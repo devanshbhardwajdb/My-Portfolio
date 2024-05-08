@@ -3,6 +3,8 @@ import React, { useRef, useState } from 'react'
 import { motion } from "framer-motion";
 import { fadeIn, fadeIn3, slideIn, staggerContainer, textVariant, textVariant1 } from "@/utils/motion";
 import { skills } from '@utils/skills';
+import Lottie from "lottie-react";
+import A1 from "@/a3.json"
 
 
 const Skills = () => {
@@ -27,9 +29,10 @@ const Skills = () => {
 
 
   return (
-    <div id="skills" className='text-white bg_skills   w-[100vw] flex flex-col items-center justify-center heading py-20  relative '>
+    <div id="skills" className='text-white bg_skills relative h-full  w-[100vw] flex flex-col items-center justify-center heading py-20   '>
       {/* <div className="absolute bg_overlay left-0 h-[20%] bottom-0 w-[5vw] z-[1]"></div> */}
       {/* <div className="absolute bg_overlay right-0 h-full bg-red-400 w-[5vw] z-[1]"></div> */}
+      <Lottie animationData={A1} loop={true} className='absolute z-[-1] h-full left-0 opacity-50 max-lg:h-[150px]' />
       <motion.h1 variants={slideIn('down', "tween", 0, 0.5)}
         initial="hidden"
         whileInView="show"
