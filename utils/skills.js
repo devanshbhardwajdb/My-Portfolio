@@ -82,28 +82,24 @@ export const skills = [
         name: "VS Code",
         icon: "/assets/icons/vscode.svg",
     },
+    
     {
         id: 17,
-        name: "Postman",
-        icon: "/assets/icons/postman.svg",
-    },
-    {
-        id: 18,
         name: "Strapi",
         icon: "/assets/icons/strapi.svg",
     },
     {
-        id: 19,
+        id: 18,
         name: "Google Cloud",
         icon: "/assets/icons/gcloud.svg",
     },
     {
-        id: 20,
+        id: 19,
         name: "JWT",
         icon: "/assets/icons/jwt.svg",
     },
     {
-        id: 21,
+        id: 20,
         name: "Figma",
         icon: "/assets/icons/figma.svg",
     },
