@@ -1,4 +1,4 @@
-
+"use client"
 import Experience from "./experience/page";
 import Projects from "./projects/page";
 import Skills from "./skills/page";
@@ -7,6 +7,8 @@ import Contact from "./contact/page";
 import Cursor from "@components/Cursor";
 import Hero from "./hero/page";
 import Link from "next/link";
+import StarsCanvas from '@/components/Stars'
+
 
 
 
@@ -16,12 +18,12 @@ import Link from "next/link";
 const Home = () => (
 
     <>
-        <div className=" bg main"></div>
+        <div className="bg-white"></div>
 
 
-
-        <Hero/>
-        <Cursor />
+        <StarsCanvas />
+        <Hero />
+        {/* <Cursor /> */}
         <Skills />
         <Projects />
         <Experience />

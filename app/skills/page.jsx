@@ -5,6 +5,7 @@ import { fadeIn, fadeIn3, slideIn, staggerContainer, textVariant, textVariant1 }
 import { skills } from '@utils/skills';
 import Lottie from "lottie-react";
 import A1 from "@/a3.json"
+import StarsCanvas from '@/components/Stars'
 
 
 const Skills = () => {
@@ -29,14 +30,13 @@ const Skills = () => {
 
 
   return (
-    <div id="skills" className='text-white bg_skills relative h-full  w-[100vw] flex flex-col items-center justify-center heading py-20   '>
-      {/* <div className="absolute bg_overlay left-0 h-[20%] bottom-0 w-[5vw] z-[1]"></div> */}
-      {/* <div className="absolute bg_overlay right-0 h-full bg-red-400 w-[5vw] z-[1]"></div> */}
-      <Lottie animationData={A1} loop={true} className='absolute z-[-1] h-full left-0 opacity-50 max-lg:h-[150px]' />
+    <div id="skills" className='text-white  relative h-full  w-[100vw] flex flex-col items-center justify-center heading py-20   '>
+      {/* <StarsCanvas /> */}
+     
       <motion.h1 variants={slideIn('down', "tween", 0, 0.5)}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: false, amount: 0.25 }} className='font-teachers htext text-4xl font-extrabold  hover:text-[#57ebff] duration-[0.7s]'>SKILLS</motion.h1>
+        viewport={{ once: false, amount: 0.25 }} className='font-poppins text-gray-200 text-5xl font-extrabold  hover:text-[#57ebff] duration-[0.7s]'>Skills</motion.h1>
       {/* <div className='absolute  w-[50vw] z-[50] bg_skill h-1/2 left-0'></div> */}
       <marquee behavior="scroll" direction="left" scrollDelay={60} ref={marqueeRef} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} scrollAmount={20} className=' '>
 
@@ -53,16 +53,16 @@ const Skills = () => {
                   viewport={{ once: false, amount: 0.25 }}
                   className='flex flex-col justify-center items-center'
                 >
-                  <div className="relative  rounded-full flex cursor-pointer     items-center justify-center  h-40 w-40">
+                  <div className="relative  rounded-full flex cursor-pointer items-center  justify-center  h-40 w-40">
 
-                    <div className='bg-white flex items-center  justify-center rounded-full w-40 h-40 '>
+                    <div className='bg-gray-200 flex items-center  justify-center rounded-full w-40 h-40 '>
                       <img alt={skill.name} src={skill.icon} className=' duration-500 object-contain  cursor-pointer  h-28 w-28 flex items-center justify-center' />
                     </div>
 
-                    <div className="box absolute  inset-y-[-10px] inset-x-[-12px] h-[115%] w-[115%] z-[-3]"></div>
+                    <div className="spinner absolute w-[105%] h-[105%] z-[-3]"></div>
                   </div>
 
-                  <h1 className='font-bold text-lg font-teachers mt-4'>{skill.name}</h1>
+                  <h1 className='font-bold text-lg font-poppins mt-4'>{skill.name}</h1>
                 </motion.div>
               </div>
             )

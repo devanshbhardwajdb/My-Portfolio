@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         satoshi: ['Satoshi', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
         inter: ['Inter', 'sans-serif'],
         playfair: ['Playfair Display', 'serif'],
         livvic: ['Livvic', 'serif'],
