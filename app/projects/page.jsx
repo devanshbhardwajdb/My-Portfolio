@@ -26,7 +26,7 @@ const Projects = () => {
       </div>
 
 
-      <section className=" w-full flex flex-wrap justify-center max-md:flex-col" >
+      <section className=" w-full flex flex-wrap  justify-center max-md:flex-col" >
 
 
         {cards.map((card) => (
@@ -41,10 +41,10 @@ const Projects = () => {
               whileInView="show"
               viewport={{ once: true, amount: 0.25 }} className='green-pink-gradient p-[2px] rounded-3xl  ' >
 
-              <div className='black-gradient rounded-3xl h-[545px] p-12 flex flex-col items-start justify-center'>
+              <div className='black-gradient rounded-3xl h-[545px] p-12 max-md:p-4 flex flex-col items-start justify-center'>
 
                 <div className='relative flex justify-center w-full'>
-                  <img alt="projects" src={card.image} className='rounded-3xl  justify-center' />
+                  <img alt="projects" src={card.image} className='rounded-3xl max-md:h-[25vh]  justify-center' />
 
                   <div className='absolute inset-0 flex justify-end m-3 card-img_hover gap-2'>
                     <div

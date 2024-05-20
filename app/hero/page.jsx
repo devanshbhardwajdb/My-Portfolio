@@ -37,14 +37,14 @@ const Hero = () => {
                 whileInView="show"
                 viewport={{ once: true, amount: 0.25 }}
                 id='#home'
-                className='w-full   flex items-center justify-center flex-row min-h-[100vh] h-auto px-[8vw]  gap-20 max-lg:flex-col-reverse max-lg:mt-[30vh]'>
+                className='w-full   flex items-center justify-center flex-row min-h-[100vh] h-auto px-[8vw]  gap-20 max-lg:flex-col-reverse max-lg:mt-[15vh]'>
                 {/* <StarsCanvas /> */}
 
 
                 <motion.div variants={textVariant1(0.5)} className="w-full h-full relative ">
                     <motion.h1 className=' h1 text-left flex flex-col items-start max-lg:items-center gap-5 transition-all duration-500 '>
                         <div className="text-gray-200 text-5xl  font-extrabold max-lg:text-center " > <span> Hi, I'm</span> <span className="purple_gradient hover:text-[#57ebff] nameh1 ">Devansh Bhardwaj</span></div>
-                        <div className='text-4xl max-md:text-3xl font-extrabold text-gray-200 max-lg:text-center  '> <span>Full</span> <span> Stack</span><span> Developer</span></div>
+                        <div className='text-4xl max-md:text-2xl font-extrabold text-gray-200 max-lg:text-center  '> <span>Full</span> <span> Stack</span><span> Developer</span></div>
                     </motion.h1>
                     <motion.div className="flex gap-x-20 justify-start mt-10 mb-20 max-md:flex-col max-md:gap-5 max-xl:items-center max-xl:justify-center font-poppins relative">
                         <Link href="https://drive.google.com/file/d/1n5eNhvLGxjdUP30vV94A13UsTz-6Wem0/view?usp=sharing" target="_blank" className="hero_link green-pink-gradient w-44 h-16 p-[1px] rounded-xl">

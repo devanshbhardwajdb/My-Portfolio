@@ -1,37 +1,41 @@
 "use client"
 import React, { useState } from 'react'
 import Form from '@components/Form'
-import { useRouter } from "next/navigation";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
-  const router = useRouter();
-
-
-
-  const [formData, setFormData] = useState({ name: "", phone: "",email:"",message:"" });
+  const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
 
-    try {
-      const response = await fetch("/api/submit", {
-        method: "POST",
-        body: JSON.stringify({
-          name: formData.name,
-          phone: formData.phone,
-          email: formData.email,
+    emailjs
+      .send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          to_name: "Devansh Bhardwaj",
+          from_email: formData.email,
+          to_email: "dbhardwaj1033@gmail.com",
           message: formData.message,
-         
-        }),
-      });
-
-      if (response.ok) {
-        router.push("/");
-      }
-    } catch (error) {
-      console.log(error);
-    } 
-    
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY
+      )
+      .then(
+        () => {
+          setLoading(false);
+          alert("Thank you. I will get back to you as soon as possible.");
+          setFormData({ name: "", email: "", message: "" });
+        },
+        (error) => {
+          setLoading(false);
+          console.error(error);
+          alert("Ahh, something went wrong. Please try again.");
+        }
+      );
   };
 
   return (
@@ -40,8 +44,7 @@ const Contact = () => {
       setFormData={setFormData}
       handleSubmit={handleSubmit}
     />
-  )
-}
-
+  );
+};
 
 export default Contact;

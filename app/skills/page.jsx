@@ -38,7 +38,7 @@ const Skills = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }} className='font-poppins text-gray-200 text-5xl font-extrabold  hover:text-[#57ebff] duration-[0.7s]'>Skills</motion.h1>
       {/* <div className='absolute  w-[50vw] z-[50] bg_skill h-1/2 left-0'></div> */}
-      <marquee behavior="scroll" direction="left" scrollDelay={60} ref={marqueeRef} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} scrollAmount={20} className=' '>
+      <marquee behavior="scroll" direction="left" ref={marqueeRef} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut} scrollAmount={20} className=' '>
 
         <div className=" gap-[100px] mt-20 relative flex ">
 
