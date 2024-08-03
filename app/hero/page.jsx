@@ -7,12 +7,37 @@ import { slideIn, staggerContainer, textVariant, textVariant1 } from "@/utils/mo
 import Lottie from "lottie-react";
 import A1 from "@/a2.json"
 import StarsCanvas from '@/components/Stars'
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import { useGSAP } from "@gsap/react";
+
+
+gsap.registerPlugin(ScrollTrigger)
 
 
 const Hero = () => {
 
 
     const hero = useRef(null);
+    const scrollRef = useRef();
+    
+    // useGSAP (()=>{
+
+    //     gsap.to('#circle',{
+    //         x:150,
+    //         backgroundColor:
+    //         scrollTrigger:{
+    //             trigger:"#home",
+    //             start:'bottom bottom',
+    //             end: 'top 20%',
+    //             scrub: 1,
+    //         },
+    //         ease: 'power1.inOut'
+    //     })
+
+
+
+    // },[])
 
     // Apply hover3d effect to the photoRef
     const hoverHero = hover3d(hero, {
@@ -30,6 +55,8 @@ const Hero = () => {
 
     return (
         <div ref={hero}>
+
+            {/* <div id="circle" className="bg-red-400 w-44 h-44 fixed bottom-5"></div> */}
             <motion.div
 
                 variants={staggerContainer}
@@ -47,7 +74,7 @@ const Hero = () => {
                         <div className='text-4xl max-md:text-2xl font-extrabold text-gray-200 max-lg:text-center  '> <span>Full</span> <span> Stack</span><span> Developer</span></div>
                     </motion.h1>
                     <motion.div className="flex gap-x-20 justify-start mt-10 mb-20 max-md:flex-col max-md:gap-5 max-xl:items-center max-xl:justify-center font-poppins relative">
-                        <Link href="https://drive.google.com/file/d/1n5eNhvLGxjdUP30vV94A13UsTz-6Wem0/view?usp=sharing" target="_blank" className="hero_link green-pink-gradient w-44 h-16 p-[1px] rounded-xl">
+                        <Link href="https://drive.google.com/file/d/1ryxVSgIl2N6U4KmE9MkMFTSbNGCYdym7/view?usp=sharing" target="_blank" className="hero_link green-pink-gradient w-44 h-16 p-[1px] rounded-xl">
                             <button className="hero_button font-poppins bg-[#121212] w-full h-full rounded-xl duration-300 ">
                                 Download CV
                             </button>

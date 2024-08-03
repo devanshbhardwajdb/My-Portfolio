@@ -1,9 +1,9 @@
 
 "use client"
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from "framer-motion";
-import { navVariants } from "../utils/motion";
+import { navVariants, navVariants2 } from "../utils/motion";
 import { AiOutlineMenu } from 'react-icons/ai';
 
 const Navbar = () => {
@@ -15,6 +15,8 @@ const Navbar = () => {
   const toggleMenu = () => {
     setMenu(!menu)
   }
+ 
+
 
   return (
     <>
@@ -87,6 +89,8 @@ const Navbar = () => {
 
         </div>
       </motion.nav>
+
+     
     </>
   );
 

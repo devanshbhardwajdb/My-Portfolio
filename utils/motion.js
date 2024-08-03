@@ -19,6 +19,26 @@ export const navVariants = {
       },
     },
   };
+export const navVariants2 = {
+    hidden: {
+      opacity: 0,
+      y: 50,
+      transition: {
+        type: 'slideIn',
+        stiffness: 1000,
+        damping: 140,
+      },
+    },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: 'slideIn',
+        stiffness: 100,
+        delay: 1,
+      },
+    },
+  };
   
   export const slideIn = (direction, type, delay, duration) => ({
     hidden: {
