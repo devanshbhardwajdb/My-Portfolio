@@ -7,7 +7,7 @@ export const works = [
     },
     {
       id: 2,
-      company: "Cross Atlantic",
+      company: "Cross Atlantic Software",
       description: "Full Stack Developer Trainee",
       logo: "/assets/images/ca.png"
     },
