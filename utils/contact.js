@@ -11,7 +11,7 @@ export const contactItems = [
     id: 2,
     name: "LinkedIn",
     text: "Follow me on LinkedIn",
-    link: "https://www.linkedin.com/in/devansh-bhardwaj-98771b239/",
+    link: "https://www.linkedin.com/in/devanshbhardwajdb",
     image: "/assets/icons/linkedin.svg",
     shadow: "rgba(0, 119, 181, 0.6)" // Blue shadow for LinkedIn
   },
