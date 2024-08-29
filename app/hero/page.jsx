@@ -74,7 +74,7 @@ const Hero = () => {
                         <div className='text-4xl max-md:text-2xl font-extrabold text-gray-200 max-lg:text-center  '> <span>Full</span> <span> Stack</span><span> Developer</span></div>
                     </motion.h1>
                     <motion.div className="flex gap-x-20 justify-start mt-10 mb-20 max-md:flex-col max-md:gap-5 max-xl:items-center max-xl:justify-center font-poppins relative">
-                        <Link href="https://drive.google.com/file/d/1GVloh1K74AGy6WyXDGL6t3MCpRXKNZ8e/view?usp=sharing" target="_blank" className="hero_link green-pink-gradient w-44 h-16 p-[1px] rounded-xl">
+                        <Link href="https://drive.google.com/file/d/1RonCWzGeyt07uAokg1tA0YuN1m_pULa0/view?usp=sharing" target="_blank" className="hero_link green-pink-gradient w-44 h-16 p-[1px] rounded-xl">
                             <button className="hero_button font-poppins bg-[#121212] w-full h-full rounded-xl duration-300 ">
                                 Download CV
                             </button>
